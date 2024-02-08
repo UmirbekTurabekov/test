@@ -1,0 +1,12 @@
+def roll_dice():
+value = [1, 6]
+first_dice = randint(value[0], value[1])
+second_dice = randint(value[0], value[1])
+print(f”1st : {first_dice}\n2nd : {second_dice}”)
+
+again = True
+while again:
+roll_dice()
+ask = input(“Wanna roll again? : “).lower()
+if ask != “y”:
+again = False
